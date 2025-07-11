@@ -1,4 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
 let cursor = document.querySelector(".cursor");
 let page1Content = document.querySelector(".page1Content");
 let rejouice = document.querySelectorAll(".page1Content h1 span");
