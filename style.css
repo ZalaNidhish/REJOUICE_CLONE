@@ -5,15 +5,40 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-html, body {
-    height: 100%;
+body {
+    height: 100vh;
     width: 100%;
     background-color: white;
+    overflow: hidden;
 }
+
+.anime{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 1;
+    z-index: 100;
+}
+
+.anime div{
+    padding: 5vw;
+    width: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+} 
 
 .page1{
     height: 100vh;
     width: 100%;
+    display: flex;
 }
 
 video{
@@ -258,7 +283,7 @@ h1 span{
     width: 100%;
     display: block;
     object-fit: cover;
-    z-index: -1;
+    z-index: 1;
 }
 
 .page5 .seats .text{
@@ -266,6 +291,8 @@ h1 span{
     overflow: hidden;
     padding: 3vw;
     color: white;
+    z-index: 2;
+
 }
 
 .counter{
